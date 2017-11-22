@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/v/semantic-release-docker.svg)](https://www.npmjs.com/package/felixfbecker/semantic-release-docker)
 [![build](https://img.shields.io/travis/felixfbecker/semantic-release-docker.svg)](https://travis-ci.org/felixfbecker/semantic-release-docker)
 [![downloads](https://img.shields.io/npm/dt/felixfbecker/semantic-release-docker.svg)](https://www.npmjs.com/package/felixfbecker/semantic-release-docker)
+[![dependencies](https://img.shields.io/david/felixfbecker/semantic-release-docker.svg)](https://david-dm.org/felixfbecker/semantic-release-docker)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![license](https://img.shields.io/github/license/felixfbecker/semantic-release-docker.svg)](https://github.com/felixfbecker/semantic-release-docker/blob/master/LICENSE)
