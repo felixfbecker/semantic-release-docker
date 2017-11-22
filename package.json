@@ -1,0 +1,85 @@
+{
+  "name": "semantic-release-docker",
+  "description": "Set of semantic-release plugins to publish to docker hub",
+  "version": "0.0.0-development",
+  "engines": {
+    "node": ">=8"
+  },
+  "author": "Felix Becker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felixfbecker/semantic-release-docker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/felixfbecker/semantic-release-docker/issues"
+  },
+  "homepage": "https://github.com/felixfbecker/semantic-release-docker#readme",
+  "keywords": [
+    "docker",
+    "hub",
+    "publish",
+    "push",
+    "semantic-release",
+    "version"
+  ],
+  "scripts": {
+    "lint": "eslint lib index.js",
+    "prettier": "prettier --write --list-different '**/*.js?(on)'",
+    "semantic-release": "semantic-release"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "verifyConditions": "@semantic-release/github"
+  },
+  "dependencies": {
+    "@semantic-release/error": "^2.1.0",
+    "execa": "^0.8.0"
+  },
+  "devDependencies": {
+    "@semantic-release/github": "^1.0.0",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^4.11.0",
+    "eslint-config-prettier": "^2.5.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-prettier": "^2.3.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "1.8.2",
+    "semantic-release": "^10.0.0",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": 2
+    }
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "trailingComma": "es5",
+    "semi": false
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
