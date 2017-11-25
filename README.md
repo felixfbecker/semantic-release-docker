@@ -1,5 +1,7 @@
 # semantic-release-docker
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/felixfbecker/semantic-release-docker.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/semantic-release-docker.svg)](https://www.npmjs.com/package/felixfbecker/semantic-release-docker)
 [![build](https://img.shields.io/travis/felixfbecker/semantic-release-docker.svg)](https://travis-ci.org/felixfbecker/semantic-release-docker)
 [![downloads](https://img.shields.io/npm/dt/semantic-release-docker.svg)](https://www.npmjs.com/package/semantic-release-docker)
