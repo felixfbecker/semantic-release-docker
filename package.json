@@ -40,7 +40,7 @@
     "execa": "^0.8.0"
   },
   "devDependencies": {
-    "@semantic-release/github": "^1.0.0",
+    "@semantic-release/github": "^2.0.0",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^4.11.0",
     "eslint-config-prettier": "^2.5.0",
@@ -51,8 +51,11 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "prettier": "1.8.2",
-    "semantic-release": "^10.0.0",
+    "semantic-release": "^11.0.0",
     "validate-commit-msg": "^2.14.0"
+  },
+  "peerDependencies": {
+    "semantic-release": "^11.0.0"
   },
   "eslintConfig": {
     "extends": [
