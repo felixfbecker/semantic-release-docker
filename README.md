@@ -7,7 +7,7 @@
 [![peerDependencies](https://david-dm.org/felixfbecker/semantic-release-docker/peer-status.svg)](https://david-dm.org/felixfbecker/semantic-release-docker?type=peer)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![license](https://img.shields.io/github/license/felixfbecker/semantic-release-docker.svg)](https://github.com/felixfbecker/semantic-release-docker/blob/master/LICENSE)
+[![license](https://img.shields.io/npm/l/semantic-release-docker.svg)](https://github.com/felixfbecker/semantic-release-docker/blob/master/LICENSE)
 
 Set of [semantic-release](https://github.com/semantic-release/semantic-release) plugins for publishing a docker image to
 [Docker Hub](https://hub.docker.com/).
