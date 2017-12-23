@@ -27,8 +27,7 @@ Set of [semantic-release](https://github.com/semantic-release/semantic-release) 
 
 ## Configuration
 
-Your credentials have to be configured with the environment variables `DOCKER_USERNAME`, `DOCKER_EMAIL` and
-`DOCKER_PASSWORD`.
+Your credentials have to be configured with the environment variables `DOCKER_USERNAME` and `DOCKER_PASSWORD`.
 
 In addition, you need to specify the name of the image as the `name` setting.
 
