@@ -40,7 +40,6 @@
     "execa": "^0.8.0"
   },
   "devDependencies": {
-    "@semantic-release/github": "^2.0.0",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^4.11.0",
     "eslint-config-prettier": "^2.5.0",
