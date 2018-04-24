@@ -48,7 +48,7 @@
     "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-prettier": "^2.3.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-standard": "^3.1.0",
     "prettier": "1.8.2",
     "semantic-release": "^12.2.2",
     "validate-commit-msg": "^2.14.0"
