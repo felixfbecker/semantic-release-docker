@@ -32,9 +32,6 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "release": {
-    "verifyConditions": "@semantic-release/github"
-  },
   "dependencies": {
     "@semantic-release/error": "^2.1.0",
     "execa": "^0.9.0"
@@ -50,11 +47,11 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "prettier": "1.8.2",
-    "semantic-release": "^12.2.2",
+    "semantic-release": "^15.4.1",
     "validate-commit-msg": "^2.14.0"
   },
   "peerDependencies": {
-    "semantic-release": "^11.0.0"
+    "semantic-release": ">=11.0.0 <16.0.0"
   },
   "eslintConfig": {
     "extends": [
