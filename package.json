@@ -34,7 +34,11 @@
   },
   "dependencies": {
     "@semantic-release/error": "^2.1.0",
-    "execa": "^0.10.0"
+    "detect-indent": "^5.0.0",
+    "detect-newline": "^2.1.0",
+    "execa": "^0.10.0",
+    "fs-extra": "^6.0.1",
+    "parse-json": "^4.0.0"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0",
