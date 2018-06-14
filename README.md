@@ -17,9 +17,11 @@ Set of [semantic-release](https://github.com/semantic-release/semantic-release) 
 {
   "release": {
     "verifyConditions": "semantic-release-docker",
+    "prepare": "semantic-release-docker",
     "publish": {
       "path": "semantic-release-docker",
-      "name": "username/imagename"
+      "name": "username/imagename",
+      "buildCmd": "docker build -t username/imagename .
     }
   }
 }
@@ -29,13 +31,22 @@ Set of [semantic-release](https://github.com/semantic-release/semantic-release) 
 
 Your credentials have to be configured with the environment variables `DOCKER_USERNAME` and `DOCKER_PASSWORD`.
 
-In addition, you need to specify the name of the image as the `name` setting.
+In addition, you need to specify
+* the name of the image as the `name` setting
+* your Docker build command as `buildCmd`
+
+Optionally
+* your package root as `pkgRoot` - make sure you have the correct path in your build command, too.
 
 ## Plugins
 
 ### `verifyConditions`
 
 Verify that all needed configuration is present and login to the Docker registry.
+
+### `prepare`
+
+Update `package.json` version, and build Docker image.
 
 ### `publish`
 
@@ -52,7 +63,6 @@ jobs:
       services:
         - docker
       script:
-        - docker build -t username/imagename .
         - npm run semantic-release
 
 stages:
