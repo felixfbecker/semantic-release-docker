@@ -46,7 +46,7 @@
     "eslint-plugin-prettier": "^2.3.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "prettier": "1.12.1",
+    "prettier": "1.15.1",
     "semantic-release": "^15.4.1",
     "validate-commit-msg": "^2.14.0"
   },
