@@ -16,7 +16,10 @@ Set of [semantic-release](https://github.com/semantic-release/semantic-release) 
 ```json
 {
   "release": {
-    "verifyConditions": "semantic-release-docker",
+    "verifyConditions": {
+      "path": "semantic-release-docker",
+      "registryUrl": "docker.io"
+    },
     "publish": {
       "path": "semantic-release-docker",
       "name": "username/imagename"
@@ -29,7 +32,7 @@ Set of [semantic-release](https://github.com/semantic-release/semantic-release) 
 
 Your credentials have to be configured with the environment variables `DOCKER_USERNAME` and `DOCKER_PASSWORD`.
 
-In addition, you need to specify the name of the image as the `name` setting.
+In addition, you need to specify the name of the image as the `name` setting in the publish step. If you need to specify a custom docker registry URL, add it as the `registryUrl` setting in the verifyConditions step.
 
 ## Plugins
 
