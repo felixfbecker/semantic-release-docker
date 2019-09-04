@@ -67,3 +67,54 @@ branches:
   except:
     - /^v\d+\.\d+\.\d+$/
 ```
+
+
+## Circle CI Example .config.yml
+
+```yml
+version: 2
+jobs:
+  release:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run:
+          name: release
+          command: |
+            docker build -t username/imagename .
+            npm run semantic-release
+
+workflows:
+  version: 2
+  pipeline:
+    jobs:
+      - test
+      - release:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
+```
+
+> Note that `setup_remote_docker` step is required for this plugin to work in Circle CI environment
+
+## How to keep new version in package.json inside docker image?
+In order to do that you need to run `docker build` command during semantic-release `prepareCmd` event.
+
+It can be done with help of [@semantic-release/exec](https://github.com/semantic-release/exec) for example.
+
+```json
+{
+  "plugins": [
+    ["@semantic-release/exec", {
+      "prepareCmd": "docker build -t username/imagename ."
+    }],
+    ["semantic-release-docker", {
+      "name": "username/imagename"
+    }]
+  ]
+}
+```
