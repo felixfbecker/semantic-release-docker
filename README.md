@@ -22,7 +22,13 @@ Set of [semantic-release](https://github.com/semantic-release/semantic-release) 
     },
     "publish": {
       "path": "semantic-release-docker",
-      "name": "username/imagename"
+      "name": "username/imagename",
+      "prodReleaseTags": [
+        "<full>",
+        "<major>.<minor>",
+        "<major>",
+        "latest",
+      ]
     }
   }
 }
@@ -42,7 +48,21 @@ Verify that all needed configuration is present and login to the Docker registry
 
 ### `publish`
 
-Tag the image specified by `name` with the new version, push it to Docker Hub and update the `latest` tag.
+Tag the image specified by `name` with the new version tags and push it to Docker Hub.
+
+| Options           | Description                                                     | Default                     |
+| ----------------- | --------------------------------------------------------------- | ----------------------------|
+| `name`            | The name of the image on docker hub (i.e. `username/imagename`) | *required*                  |
+| `prodReleaseTags` | Image tag templates for regular releases                        | `[ '<full>', 'latest' ]`    |
+| `preReleaseTags`  | Image tag templates for pre-releases                            | `[ '<full>', 'latest' ]`    |
+
+| Template Variable | Description             | Example: `4.7.11-beta.1` |
+| ----------------- | ----------------------- | ------------------------ |
+| `<full>`          | The full semver version | `4.7.11-beta.1`          |
+| `<major>`         | The major version       | `4`                      |
+| `<minor>`         | The minor version       | `7`                      |
+| `<patch>`         | The patch version       | `11`                     |
+| `<channel>`       | The pre-release channel | `beta`                   |
 
 ## Example .travis.yml
 
