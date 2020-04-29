@@ -51,7 +51,7 @@
     "validate-commit-msg": "^2.14.0"
   },
   "peerDependencies": {
-    "semantic-release": ">=11.0.0 <16.0.0"
+    "semantic-release": ">=11.0.0 <18.0.0"
   },
   "eslintConfig": {
     "extends": [
