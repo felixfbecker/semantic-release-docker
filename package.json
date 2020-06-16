@@ -1,5 +1,5 @@
 {
-  "name": "semantic-release-docker",
+  "name": "@yaradigitallabs/semantic-release-docker",
   "description": "Set of semantic-release plugins to publish to docker hub",
   "version": "0.0.0-development",
   "engines": {
@@ -79,6 +79,6 @@
     "semi": false
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
