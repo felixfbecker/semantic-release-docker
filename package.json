@@ -34,7 +34,8 @@
   },
   "dependencies": {
     "@semantic-release/error": "^2.1.0",
-    "execa": "^4.0.0"
+    "execa": "^4.0.0",
+    "semver": "^7.3.2"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0",
